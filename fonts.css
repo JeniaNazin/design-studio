@@ -1,0 +1,444 @@
+@font-face {
+    font-family: 'Nunito Sans Regular';
+    src: url("fonts/NunitoSans-Regular.woff") format("woff"),
+         url("fonts/NunitoSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito Sans Italic';
+    src: url("fonts/NunitoSans-Italic.woff") format("woff"),
+         url("fonts/NunitoSans-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yeseva One Regular';
+    src: url("fonts/YesevaOne-Regular.woff") format("woff"),
+         url("fonts/YesevaOne-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+/*header*/
+.header__title a {
+    font-family: 'Nunito Sans Regular';
+    font-size: 11px;
+    color: #E3B873;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header__navigation-list-element a {
+    font-family: 'Nunito Sans Regular';
+    font-size: 11px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.header__navigation-list-element a:hover,
+.header__navigation-list-element a:active,
+.header__navigation-list-element a:visited  {
+    color:#E3B873
+}
+.header__phone a {
+    font-family: 'Nunito Sans Regular';
+    font-size: 11px;
+    color:#E3B873;
+}
+.header__button-request,
+.main__calculatecost-button-cost,
+.main__calculatecost-button-submit {
+    font-family: 'Nunito Sans Italic';
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*страница расчета стоимости*/
+.main__calculatecost-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 40px;
+    line-height: 132.8%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.main__calculatecost-title-color {
+    font-family: 'Yeseva One Regular';
+    font-size: 40px;
+    line-height: 132.8%;
+    color: #E3B873;
+    text-transform: uppercase;
+}
+.main__calculatecost-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 22px;
+    line-height: 163.7%;
+    color:#FFFFFF;
+}
+/*страница готовых проектов*/
+.main__completedprojects-project-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 27px;
+    line-height: 124%;
+    color:#E3B873;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+.main__completedprojects-project-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    line-height: 165%;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.main__completedprojects-project-info-entry-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 18px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.main__completedprojects-project-info-entry-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    line-height: 163.7%;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main__completedprojects-navigation-entry a {
+    font-family: 'Yeseva One Regular';
+    font-size: 14px;
+    line-height: 138.6%;
+    color:rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main__completedprojects-navigation-entry a:hover,
+.main__completedprojects-navigation-entry a:active {
+    color:#E3B873;
+    text-decoration: underline;
+}
+/*видеонаблюдение*/
+.main__onlinecontrol-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 20px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.main__onlinecontrol-info {
+    font-family: 'Nunito Sans Regular';
+    font-size: 18px;
+    line-height: 180%;
+    color:#363636;
+    margin-top: 0;
+    margin-bottom: 91.5px;
+    padding-left: 8.3%; /*68px*/
+    padding-right: 8.3%; /*68px*/
+}
+.main__onlinecontrol-submit-name p,
+.main__onlinecontrol-submit-phone p {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:rgba(54,54,54,0.5);
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.main__onlinecontrol-submit-name input,
+.main__onlinecontrol-submit-phone input {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    color:#363636;
+}
+.main__onlinecontrol-submit-button {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+.main__onlinecontrol-submit-agreement label {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    color:#181818;
+}
+/*типы ремонтов*/
+.main__typesofrepair-title-text {
+    font-family: 'Yeseva One Regular';
+    font-size: 20px;
+    color:#181818;
+    margin: 0;
+    text-transform: uppercase;
+    margin-top: 145px;
+}
+.main__typesofrepair-entry-text p {
+    font-family: 'Yeseva One Regular';
+    font-size: 18px;
+    color: #363636;
+    margin: 0;
+    margin-bottom: 13px;
+    margin-top: 25px;
+    margin-left: 34px;
+}
+.main__typesofrepair-entry-text ul {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color: #959595;
+    margin: 0;
+    padding-left: 20px;
+    margin-left: 34px;
+    line-height: 204.6%;
+    
+}
+.main__typesofrepair-entry-price {
+    font-family: 'Yeseva One Regular';
+    font-size: 18px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+/*заказать звонок для замеров*/
+.main__request-info-num p {
+    font-family: 'Yeseva One Regular';
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+.main__request-info-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    color:#363636;
+    margin: 0;
+}
+.main__request-call-title {
+    font-family: 'Nunito Sans Regular';
+    font-size: 18px;
+    color:#FFFFFF;
+    line-height: 143%;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0;
+}
+.main__request-call-input p {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:rgba(255,255,255,0.5);
+    margin: 0;
+    margin-bottom: 7px;
+}
+.main__request-call-input input,
+.main__request-call-agreement label {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    color:rgba(255,255,255,1);
+    margin: 0;
+}
+.main__request-call-button {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:#FFFFFF;
+}
+.main__request-help-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 18px;
+    color:#E3B873;
+    line-height: 143%;
+    margin: 0;
+    text-shadow: 0px 3px 10px 0px rgba(227,184,115,0.15);
+}
+/*галлерея стилей*/
+.main__styles-list-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 27px;
+    text-transform: uppercase;
+    color:#E3B873;
+    margin: 0;
+    margin-top: 137px;
+    margin-bottom: 47px;
+}
+.main__styles-list-entry {
+    text-decoration: none;
+    font-family: 'Nunito Sans Regular';
+    font-size: 20px;
+    line-height: 255%;
+    color:#FFFFFF;
+}
+.main__styles-list-entry:hover, 
+.main__styles-list-entry:active {
+    color:#E3B873;
+    text-decoration: underline;
+}
+/*наши клиенты*/
+.main__clients-title-text {
+    font-family: 'Yeseva One Regular';
+    font-size: 20px;
+    color: #181818;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 110px;
+}
+.main__clients-title-comment {
+    font-family: 'Nunito Sans Regular';
+    font-size: 18px;
+    line-height: 163.7%;
+    color: #363636;
+    text-align: center;
+    margin:0;
+    margin-top: 24px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.main__clients-entries-name p {
+    font-family: 'Yeseva One Regular';
+    font-size: 18px;
+    color: #181818;
+    margin: 0;
+}
+.main__clients-entries-text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    line-height: 185%;
+    color: #959595;
+    margin: 0;
+}
+.main__clients-info-area p,
+.main__clients-info-time p {
+    font-family: 'Yeseva One Regular';
+    font-size: 17px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+}
+/*подвал*/
+.footer__questions-title {
+    font-family: 'Yeseva One Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 138%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 34px;
+    margin-bottom: 45px;
+}
+.footer__questions-input p {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:rgba(255,255,255,0.5);
+    margin: 0;
+    margin-bottom: 7px;
+}
+.footer__questions-input input,
+.footer__questions-agreement label {
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    color:rgba(255,255,255,1);
+    margin: 0;
+}
+.footer__submit-button {
+    font-family: 'Nunito Sans Regular';
+    font-size: 13px;
+    color:rgba(255,255,255,1);
+    text-transform: uppercase;
+}
+.footer__connections-adress {
+    font-family: 'Yeseva One Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 138%;
+    color: #E3B873;
+    margin: 0;
+    text-align: center;
+}
+@media screen and (max-width:376px) {
+/*header*/
+    .header__phone a {
+        color:#FFFFFF;
+        text-decoration: none;
+    }
+    /*страница расчета стоимости*/
+    .main__calculatecost-title,
+    .main__calculatecost-title-color {
+        font-size: 23px;
+    }
+    .main__calculatecost-text {
+        font-size: 14px;
+        line-height: 135.8%;
+    }
+    /*страница готовых проектов*/
+    .main__completedprojects-project-title {
+        text-align: center;
+    }
+    .main__completedprojects-project-text {
+        font-size: 11px;
+        margin-bottom: 45px;
+        text-align: center;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .main__completedprojects-project-info-entry-title {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .main__completedprojects-project-info-entry-text {
+        font-size: 11px;
+    }
+    /*видеонаблюдение*/
+    .main__onlinecontrol-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main__onlinecontrol-info {
+        font-family: 'Nunito Sans Regular';
+        font-size: 11px;
+        line-height: 160%;
+        color:#FFFFFF;
+        margin-top: 0;
+        margin-bottom: 80px;
+        padding-left: 0;
+        padding-right: 0; 
+        text-align: center;
+    }
+    .main__onlinecontrol-submit-name p,
+    .main__onlinecontrol-submit-phone p {
+        color:rgba(255,255,255,0.5);
+    }
+    .main__onlinecontrol-submit-name input,
+    .main__onlinecontrol-submit-phone input {
+        color:#FFFFFF;
+    }
+    .main__onlinecontrol-submit-agreement label {
+        color:#FFFFFF;
+    }
+/*типы ремонтов*/    
+.main__typesofrepair-entry-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 21px;
+    margin-left: 31px;
+}
+.main__typesofrepair-entry-text ul {
+    margin-left: 31px;
+    line-height: 169%;
+}
+.main__typesofrepair-entry-price {
+    font-size: 15px;
+}
+/*галерея стилей*/  
+.main__styles-list-title {
+    font-size: 22px;
+    margin-top: 55px;
+    text-align: center;
+}
+/*подвал*/
+.footer__questions-title {
+    align-self: center;
+}
+.footer__connections-adress {
+    font-size: 18px;
+}
+}

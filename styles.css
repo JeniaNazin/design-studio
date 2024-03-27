@@ -1,0 +1,977 @@
+button:hover {
+    cursor: pointer;
+}
+body {
+    margin: 0 auto;
+}
+/*header*/
+.header {
+    background-color: #131313;
+    height: 83px;
+    width: 100%;
+}
+.header__container {
+    max-width: 1260px;
+    height: 83px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navigation-list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap:3.26vw; /*47px*/
+}
+.header__phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:3.125vw; /*45px*/
+}
+.header__button-request {
+    width: 161px;
+    height: 37px;
+    background-color: #E3B873;
+    border: none;
+    border-radius: 2px;
+}
+/*страница расчета стоимости*/
+.main__calculatecost {
+    width: 100%;
+    height: 707px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/background_1.png);
+    background-size: cover;
+    background-position: center;
+}
+.main__calculatecost-container {
+    width: 36vw; /*520px*/
+    height: 21.2vw /*305px*/;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 9.3vw; /*134px*/
+    padding-top: 13.5vw; /*194px*/
+}
+.main__calculatecost-title {
+    margin: 0 auto;
+}
+.main__calculatecost-text {
+    margin-top: 1.32vw; /*19px*/
+    margin-bottom: 1.74vw; /*25px*/
+}
+.main__calculatecost-buttons {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.main__calculatecost-button-cost,
+.main__calculatecost-button-submit {
+    width: 207px;
+    height: 51px;
+}
+.main__calculatecost-button-cost {
+    background-color: #E3B873;
+    border: none;
+    border-radius: 2px;
+}
+.main__calculatecost-button-submit {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+/*страница готовых проектов*/
+.main__completedprojects {
+    width: 100%;
+    height: 1715px;
+    background:linear-gradient(to bottom, #131313 0%, #131313 63%, #FFFFFF 63%, #FFFFFF 100%);
+    display: flex;
+    flex-direction: column;
+    gap:90px;
+}
+.main__completedprojects-container {
+    max-width: 1171px;
+    height: 552px;
+    margin: 0 auto;
+    padding-top: 107px; 
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: space-between;
+}
+.main__completedprojects-project {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.main__completedprojects-project-info {
+    display: grid;
+    grid-template-columns: 28.5% 39.8%; /*126px 176px*/
+    grid-template-rows: repeat(2, auto);
+    column-gap: 11.3%; /*50px*/
+    row-gap: 33px;
+    margin-bottom: 60px;
+}
+.main__completedprojects-project-navigation {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    align-items: center;
+}
+.main__completedprojects-project-navigation-position rect:hover,
+.main__completedprojects-project-navigation-position rect:active {
+    fill-opacity: 1;
+}
+.main__completedprojects-images {
+    display: flex;
+    flex-direction: column;
+    gap:53px;
+}
+.main__completedprojects-navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap:8.9%; /*60.5px*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main__completedprojects-gallery {
+    position:relative;
+    width: 47.15vw; /*679px*/
+    height: 482px;
+}
+.main__completedprojects-gallery-rostov {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+.main__completedprojects-gallery-sochi {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+.main__completedprojects-gallery-nav-left {
+    position:absolute;
+    z-index: 0;
+    top:45%;
+    left:5%;
+}
+.main__completedprojects-gallery-nav-right {
+    position:absolute;
+    z-index: 0;
+    top:45%;
+    left:85%;
+}
+/*видеонаблюдение*/
+.main__onlinecontrol-container {
+    max-width: 817px;
+    height: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__onlinecontrol-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 32px;
+}
+.main__onlinecontrol-video {
+    width: 100%; /*817px*/
+    min-height: 434px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/video_thumbail.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.15);
+}
+.main__onlinecontrol-video-divider {
+    margin-top: 62.5px;
+    margin-bottom: 34px;
+    min-width: 55px;
+    border: 1.5px solid #E3B873;
+}
+.main__onlinecontrol-submit {
+    display: grid;
+    grid-template-columns: 2.93% auto auto auto 2.93%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    ". name phone button ."
+    ". agree agree agree .";
+    column-gap: 50px;
+    row-gap: 38px;
+}
+.main__onlinecontrol-submit-name {
+    grid-area: name;
+}
+.main__onlinecontrol-submit-phone {
+    grid-area: phone;
+}
+.main__onlinecontrol-submit-name input,
+.main__onlinecontrol-submit-phone input {
+    width: 16vw; /*231px*/
+    height: 25px;
+    border-bottom: 1px solid rgba(54,54,54,0.3);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.main__onlinecontrol-submit-name input:focus,
+.main__onlinecontrol-submit-phone input:focus {
+    outline: none;
+}
+.main__onlinecontrol-submit-button {
+    width: 200px;
+    height: 51px;
+    background-color: #E3B873;
+    border: none;
+    border-radius: 2px;
+    grid-area: button;
+    box-shadow: 0px 15px 15px 0px rgba(227, 184, 115, 0.15);
+}
+.main__onlinecontrol-submit-agreement {
+    grid-area: agree;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+}
+#agree {
+    accent-color: #E3B873;
+    color: #FFFFFF;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+/*типы ремонтов*/
+.main__typesofrepair {
+    width: 100%;
+    margin: 0 auto;
+}
+.main__typesofrepair-container {
+    max-width: 1236px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap:30px;
+    align-items: center;
+}
+.main__typesofrepair-title {
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+}
+.main__typesofrepair-title-logo {
+    display: flex;
+    flex-direction: row;
+    gap:9px;
+    justify-content: center;
+    align-items: center;
+}
+.main__typesofrepair-entries {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:30px;    
+}
+.main__typesofrepair-entry-redecorating {
+    background-image: url(images/redecorating.png);
+    background-size: cover;
+    background-position: center;
+}
+.main__typesofrepair-entry-overhaul {
+    background-image: url(images/overhaul.png);
+    background-size: cover;
+    background-position: center;
+}
+.main__typesofrepair-entry-designerrepair {
+    background-image: url(images/designer_repair.png);
+    background-size: cover;
+    background-position: center;
+}
+.main__typesofrepair-entry-redecorating,
+.main__typesofrepair-entry-overhaul,
+.main__typesofrepair-entry-designerrepair {
+    position: relative;
+    width: 31%;
+    height: 421px;
+}
+.main__typesofrepair-entry-text {
+    position: absolute;
+    left: 31px;
+    top: 294px;
+    width: 84%;
+    height: 286px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+.main__typesofrepair-entry-price {
+    position: absolute;
+    left: 31px;
+    top:554px;
+    width: 58%;
+    height: 54px;
+    background-color:#E3B873;
+    border: none;
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.3);
+}
+/*заказать звонок для замеров*/
+.main__request {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 240px;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(images/background_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -45%;
+}
+.main__request-container {
+    max-width: 1090px;
+    height: 620px;
+    margin-left: 17%;
+    margin-top: 230px;
+    display: grid;
+    grid-template-columns: 34.5% 46.5%;
+    grid-template-rows: 509px 72px;
+    grid-template-areas:
+    "info call"
+    ". helpreq";
+    column-gap: 14.5vw; /*210px*/
+    row-gap:38px;
+}
+.main__request-info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 10px;
+    row-gap: 82px;
+    align-items: center;
+}
+.main__request-info-num {
+    width: 42px;
+    height: 42px;
+    background-color: #E3B873;
+    border: 8px solid #FFFFFF;
+    border-radius: 30px;
+    align-content: center;
+    box-shadow: 0px 5px 15px rgba(227,184,115,0.15);
+}
+.main__request-call {
+    grid-area: call;
+    display: flex;
+    flex-direction: column;
+    max-height: 509px;
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    padding-top: 28px;
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-bottom: 25px;
+}
+.main__request-call-input input {
+    background-color: transparent;
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.main__request-call-input {
+    margin-top: 40px;
+}
+.main__request-call-agreement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+.main__request-call-button {
+    width: 53%;
+    height: 51px;
+    background-color: #E3B873;
+    border: none;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.main__request-help {
+    grid-area: helpreq;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.main__request-help svg {
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+/*галлерея стилей*/
+.main__styles {
+    width: 100%;
+    height: 864px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/styles_4.png);
+    background-size: cover;
+    background-position: center;
+}
+.main__styles-container {
+    max-width: 1238px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 24% 16% 28% 4% 28%; /*300px 189px 355px 43px 355px*/
+    grid-template-areas: 
+    "list . firstrow . secondrow";
+}
+.main__styles-list {
+    grid-area: list;
+}
+.main__styles-list ul {
+    list-style: none;
+    padding: 0;
+}
+.main__styles-gallery-firstrow {
+    grid-area: firstrow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position:absolute;
+    top:-40px;
+}
+.main__styles-gallery-entry {
+    width: 100%;
+}
+.main__styles-gallery-entry-nav-left {
+    position: absolute;
+    top:50%;
+    left: 5%;
+    display: none;
+}
+.main__styles-gallery-entry-nav-right {
+    position: absolute;
+    top:50%;
+    right: 5%;
+    display: none;
+}
+.main__styles-gallery-firstrow .main__styles-gallery-entry:first-child {
+    height: 555px;
+}
+.main__styles-gallery-firstrow .main__styles-gallery-entry:last-child {
+    height: 350px;
+}
+.main__styles-gallery-secondrow {
+    grid-area: secondrow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: absolute;
+    top:-112px;
+}
+.main__styles-gallery-secondrow .main__styles-gallery-entry:first-child {
+    height: 275px;
+}
+.main__styles-gallery-secondrow .main__styles-gallery-entry:last-child {
+    height: 625px;
+}
+.main__styles-gallery-entry img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/*наши клиенты*/
+.main__clients {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(images/background_3.svg);
+    background-repeat: repeat-x;
+    background-position-y: 700px;
+}
+.main__clients-containter {
+    max-width: 1236px;
+    height: 1107px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap:39px;
+    align-items: center;
+}
+.main__clients-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:13px;
+}
+.main__clients-title-logo {
+    display: flex;
+    flex-direction: row;
+    gap:9px;
+    justify-content: center;
+    align-items: center;
+}
+.main__clients-entries {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4.5%;
+    justify-content: space-between;
+}
+.main__clients-entry {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: #FFFFFF;
+    border:none;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 24px 2.5% 90px 1.6%; /*31px .. 20px*/
+    position: relative;
+}
+.main__clients-entries-name {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap:6%; /*23px*/
+}
+.main__clients-entries-photo {
+    height: 5.3vw;
+    width: 5.3vw;
+    border-radius: 50%;
+}
+.main__clients-entries-photo img {
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.main__clients-info {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px rgba(227,184,115, 0.5);
+}
+.main__clients-info-area,
+.main__clients-info-time {
+    height: 54px;
+    width: 10vw; /*145px*/
+    background-color: #E3B873;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main__clients-info-area {
+    border-right: 1px solid #FFFFFF;
+}
+/*подвал*/
+.footer {
+    width: 100%;
+    height: 955px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(images/background_4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__container {
+    max-width: 925px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+.footer__questions {
+    position: absolute;
+    top: -222px;
+    width: 61vw; /*883px*/
+    height: 445px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__questions-input-entries {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 4vw 1fr;
+    grid-template-rows: repeat(3, 45px);
+    grid-template-areas: 
+    "name . phone"
+    ". . ."
+    "question question question";
+    margin-bottom: 46px;
+}
+.footer__questions-input:first-child {
+    grid-area: name;
+}
+.footer__questions-input:nth-child(2n) {
+    grid-area: phone;
+}
+.footer__questions-input:last-child {
+    grid-area: question;
+}
+.footer__questions-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.footer__submit-button {
+    height: 51px;
+    width: 22%;
+    background-color: #E3B873;
+    border: none;
+    margin-top: 50px;
+}
+.footer__connections {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-top: 274px;
+}
+.footer__connections-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+.footer__map {
+    margin-top: 45px;
+    width: 100%;
+}
+.footer__map iframe {
+    width: 100%;
+}
+@media screen and (min-width:1600px) {
+    /*header*/
+    .header__container {
+        margin-left: 25.68vw; /*642px*/
+        margin-right: 24vw; /*602px*/
+    }
+    .header__navigation-list {
+        gap:1.88vw; /*47px*/
+    }
+    .header__phone {
+        gap:1.8vw; /*45px*/
+    }
+    /*страница расчета стоимости*/
+    .main__calculatecost-container {
+        width: 535px;
+        height: 305px;
+        padding-left: 27.36%; /*684px*/
+        padding-top: 7.76%; /*194px*/
+    }
+    .main__calculatecost-text {
+        margin-top: 0.76%;
+        margin-bottom: 2.4%; 
+    }
+    /*страница готовых проектов*/
+.main__completedprojects {
+    width: 100%;
+    height: 1100px;
+    background:#131313;
+}
+.main__completedprojects-project {
+    min-width: 442px;
+}
+.main__completedprojects-images {
+    min-width: 680px;
+}
+.main__completedprojects-gallery {
+    width: 100%;
+}
+.main__typesofrepair,
+.main__request,
+.main__styles,
+.main__clients,
+.footer {
+    display: none;
+}
+}
+@media screen and (max-width:376px){
+    /*header*/
+    .header {
+        height: 57px;
+    }
+    .header__container {
+        max-width: 339px;
+        height: 57px;
+    }
+    .header__navigation-list {
+        display: none;
+    }
+    .header__button-request {
+        display: none;
+    }
+    /*страница расчета стоимости*/
+    .main__calculatecost {
+        height: 476px;
+    }
+    .main__calculatecost-container {
+        width: auto;
+        height: auto;
+        padding: 85px 18px 61px 18px;
+    }
+    .main__calculatecost-text {
+        margin-top: 16px;
+        margin-bottom: 50px;
+    }
+    .main__calculatecost-buttons {
+        flex-direction: column;
+        gap:26px;
+    }
+    .main__calculatecost-button-cost,
+    .main__calculatecost-button-submit {
+        width: 100%;
+}
+/*страница готовых проектов*/
+.main__completedprojects {
+    height: 1590px;
+    background:linear-gradient(to bottom, #131313 0%, #131313 98.5%, #FFFFFF 98.5%, #FFFFFF 100%);
+    gap:58px;
+}
+.main__completedprojects-container {
+    max-width: 340px;
+    height: 633px;
+    margin: 0 auto;
+    padding-top: 36px;
+    flex-direction: column;
+    gap:0;
+    align-items: center;
+}
+.main__completedprojects-project {
+    padding-top: 0;
+}
+.main__completedprojects-project-info {
+    grid-template-columns: 29% 53%;
+    column-gap: 18%; /*60px*/
+    margin-bottom: 35px;
+}
+.main__completedprojects-project-navigation {
+    display: none;
+}
+.main__completedprojects-navigation {
+    display: none;
+}
+.main__completedprojects-gallery {
+    min-width: 340px;
+    height: 242px;
+}
+.main__completedprojects-gallery-rostov {
+    z-index: 1;
+}
+.main__completedprojects-gallery-sochi {
+    z-index: 2;
+}
+.main__completedprojects-gallery-nav-left {
+    z-index: 3;
+}
+.main__completedprojects-gallery-nav-right {
+    z-index: 3;
+}
+/*видеонаблюдение*/
+.main__onlinecontrol-container {
+    max-width: 340px;
+    height: 860px;
+}
+.main__onlinecontrol-logo {
+    margin-bottom: 40px;
+}
+.main__onlinecontrol-video {
+    width: 100%; 
+    min-height: 207px;
+}
+.main__onlinecontrol-video-play svg {
+    width: 57px;
+    height: 57px;
+}
+.main__onlinecontrol-video-divider {
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+.main__onlinecontrol-submit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    column-gap: 0;
+    row-gap: 0;
+}
+.main__onlinecontrol-submit-name input {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,1);
+    background-color: transparent;
+    margin-bottom: 60px;
+}
+.main__onlinecontrol-submit-phone input {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,1);
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+.main__onlinecontrol-submit-button {
+    width: 100%;
+    order: 1;
+}
+.main__onlinecontrol-submit-agreement {
+    margin-bottom: 60px;
+}
+/*типы ремонтов*/
+.main__typesofrepair-container {
+    max-width: 340px;
+    height: 1825px;
+    gap:40px;
+}
+.main__typesofrepair-title {
+    gap:17px;
+}
+.main__typesofrepair-entries {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:178px;    
+}
+.main__typesofrepair-entry-redecorating,
+.main__typesofrepair-entry-overhaul,
+.main__typesofrepair-entry-designerrepair {
+    width: 100%;
+    height: 365px;
+}
+.main__typesofrepair-entry-text {
+    left: 0;
+    top: 223px;
+    width: 79%;
+    height: 240px;
+    box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.main__typesofrepair-entry-price {
+    left: 0;
+    top:444px;
+    width: 55.8%;
+    height: 40px;
+}
+/*заказать звонок для замеров*/
+.main__request {
+    display: none;
+}
+/*галлерея стилей*/
+.main__styles {
+    height: 390px;
+    background-image:none;
+    background:linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 70%, #131313 70%, #131313 100%);
+}
+.main__styles-container {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.main__styles-list ul {
+    display: none;
+}
+.main__styles-gallery-firstrow,
+.main__styles-gallery-secondrow {
+    top: 142px;
+}
+.main__styles-gallery-firstrow .main__styles-gallery-entry:first-child,
+.main__styles-gallery-firstrow .main__styles-gallery-entry:last-child,
+.main__styles-gallery-secondrow .main__styles-gallery-entry:first-child,
+.main__styles-gallery-secondrow .main__styles-gallery-entry:last-child {
+    height: 242px;
+}
+.main__styles-gallery-entry:last-child {
+    position: absolute;
+}
+.main__styles-gallery-entry-nav-left,
+.main__styles-gallery-entry-nav-right {
+    display: inherit;
+}
+/*наши клиенты*/
+.main__clients {
+    display: none;
+}
+/*подвал*/
+.footer {
+    height: 1050px;
+    background-image: none;
+    background: #131313;
+}
+.footer__container {
+    max-width: 340px;
+}
+.footer__questions {
+    position: static;
+    width: 100%; 
+    height: 550px;
+    background-color: #131313;
+    align-items: start;
+}
+.footer__questions-input-entries {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 45px);
+    grid-template-areas: 
+    "name"
+    "phone"
+    "question";
+    row-gap: 63px;
+    margin-bottom: 46px;
+}
+.footer__submit-button {
+    height: 51px;
+    width: 100%;
+    background-color: #E3B873;
+    border: none;
+    margin-top: 68px;
+}
+.footer__connections {
+    max-width: 310px;
+    gap: 25px;
+    align-items: center;
+    margin-top: 42px;
+    order: 2;
+}
+.footer__connections-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+.footer__map {
+    margin-top: 45px;
+    width: 100%;
+    order: 1;
+}
+.footer__map iframe {
+    width: 100%;
+    height: 255px;
+}
+}
