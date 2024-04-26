@@ -108,16 +108,18 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-.main__completedprojects-navigation-entry a {
+.main__completedprojects-navigation-entry {
     font-family: 'Yeseva One Regular';
     font-size: 14px;
     line-height: 138.6%;
     color:rgba(255,255,255,0.3);
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
-.main__completedprojects-navigation-entry a:hover,
-.main__completedprojects-navigation-entry a:active {
+.main__completedprojects-navigation-entry:hover,
+.main__completedprojects-navigation-entry:active,
+.active_citynav {
     color:#E3B873;
     text-decoration: underline;
 }
